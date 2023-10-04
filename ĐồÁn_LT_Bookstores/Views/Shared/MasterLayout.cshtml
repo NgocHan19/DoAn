@@ -1,0 +1,271 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    
+
+    @*Link phần đầu*@
+    <link rel="stylesheet" href="~/Content/Mycss/Layout1.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Croissant+One&family=Mooli&family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link href="https://fontawesome.com/icons/bell?f=classic&s=regular" />
+    <link href=" https://fontawesome.com/icons/user?f=classic&s=light" />
+</head>
+<body>
+
+    @*Phần đầu*@
+    <div id="div-adv">
+        <link href="https://www.fahasa.com/sale-thu-3?fhs_campaign=topbanner" />
+    </div>
+    <div>
+        <div id="div-top">
+            <ul class="fm-menu">
+                <li class="fm-tk">
+                    Bookstores.com
+                </li>
+            </ul>
+
+            <ul class="fm-menu">
+                <li class="fm-tk">
+                    <img src="~/Content/Img/menu.png" class="fm-menu-img" />
+                </li>
+            </ul>
+            <ul class="fm-menu">
+                <li class="fm-tk">
+                    <input type="text" id="text" placeholder="Tìm sản phẩm mong muốn...." style="line-height:20px; padding:5px 15px; border-radius:15px; width:500px" />
+                    <input type="button" id="Find" value="Tìm kiếm" style="line-height:-20px; padding:5px 15px; border-radius:15px; width:100px; background-color:red;" />
+                </li>
+            </ul>
+            <ul class="fm-menu">
+                <a href="About">
+                    <img src="~/Content/Img/chuong.png" class="fm-menu-img" />Thông báo
+
+                </a>
+                @*<li class="fm-tk">
+                        <img src="~/Content/Img/chuong.png" class="fm-menu-img" />
+                        <p>Thông báo</p>
+                    </li>*@
+            </ul>
+            <ul class="fm-menu">
+                <li class="fm-tk">
+                    <img src="~/Content/Img/giohang.png" class="fm-menu-img" />
+                    <p>Giỏ hàng</p>
+                </li>
+            </ul>
+            <div class="fm-menu">
+                <a href="accout">
+                    <img src="~/Content/Img/user.png" class="fm-menu-img" />Tài khoản
+                </a>
+                @*<li class="fm-tk">
+                        <img src="~/Content/Img/user.png" class="fm-menu-img" />
+                        <p>Tài khoản</p>
+                    </li>*@
+            </div>
+
+
+        </div>
+    </div>
+
+
+
+
+
+    @*Phần maincontent*@
+    <div>
+        @RenderBody()
+    </div>
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+        <!-- Indicators/dots -->
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+            <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+        </div>
+
+        <!-- The slideshow/carousel -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="~/Content/Img/Qc1.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/Img/Qc2.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/Img/Qc3.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/Img/Qc4.jpg" class="d-block" style="width:100%">
+            </div>
+            <div class="carousel-item">
+                <img src="~/Content/Img/Qc5.jpg" class="d-block" style="width:100%">
+            </div>
+        </div>
+
+        <!-- Left and right controls/icons -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </button>
+    </div>
+
+
+
+    @*Quảng Cáo Nhỏ*@
+    <article class="container">
+        <div class="advertise">
+            <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/FahasaSaleT3_W1_T1023_Bo1_Smallbanner_310x210PNG.png" style="width:250px" />
+        </div>
+        <div class="advertise">
+            <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/TrangThieuNhiT923_Banner_SmallBanner_310x210.jpg" style="border-radius:13px; width:250px" />
+        </div>
+        <div class="advertise">
+            <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/Manga_mainbanner_T7_Smallbanner_310x210.png" style="width:250px" />
+        </div>
+        <div class="advertise">
+            <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-10-2023/NCCDinhTiT1023_Diamond_BannerSmallBanner_310x210.png" style="width:250px" />
+        </div>
+    </article>
+
+    @*List Danh Mục*@
+    <article class="list">
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2023/Icon_B2S_1.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Trở Lại <br /> Trường <br /> Học</div>
+        </div>
+
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-09-2023/F3Thang9_120x120.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Sale Thứ 3</div>
+        </div>
+
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_FlashSale_Thuong_120x120.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Flase Sale</div>
+        </div>
+
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/IconDoChoi_Thuong_120x120.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Đồ Chơi</div>
+        </div>
+
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-07-2023/Icon_B2S_1.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Văn Phòng <br /> Phẩm</div>
+        </div>
+
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/Thang-09-2023/Icon_ThieuNhi_Thuong_120x120.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Thiếu Nhi</div>
+        </div>
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Icon_SanPhamMoi_8px_1.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Sản Phẩm <br /> Mới</div>
+        </div>
+
+        <div class="card-title">
+            <div>
+                <img src="https://cdn0.fahasa.com/media/wysiwyg/icon-menu/Manga_Week_Hot.png" style="width:60px" />
+            </div>
+            <div class="Item-name">Manga</div>
+        </div>
+    </article>
+
+
+    <article>
+        Content
+    </article>
+
+
+    @*Đăng kí nhận mail*@
+    <div class="NewRegister">
+        <div class="fm-imgs">
+            @*<img src="~/Content/Img/letter.png" class="fm-img" />*@
+            <h1>ĐĂNG KÝ NHẬN BẢN TIN</h1>
+        </div>
+        <input type="email" id="Email" placeholder="Nhập địa chỉ email của bạn..." style="line-height:20px; padding:5px 15px; border-radius:15px; width:500px" />
+        <input type="button" id="register" value="Đăng ký" style="line-height:20px; padding:5px 15px; border-radius:15px; width:100px; background-color:yellow" />
+    </div>
+
+
+
+
+
+    @*PHẦN ACCOUNT*@
+
+    <div class="account">
+        <ul class="title-account">
+            <li><a href="Logn In" class="fm-account">Logn In</a></li>
+            <li><a href="#" class="fm-account">|</a></li>
+            <li><a href="Sign Up" class="fm-account">Sign In</a></li>
+        </ul>
+        <div class="log-in">
+            <label> Number Phone/Email</label><br />
+            <input type="email" id="txtSDT/Email" placeholder="Nhập địa chỉ email/sđt của bạn..." style="line-height:20px; padding:5px 15px;  width:500px" /><br />
+            <label>Password</label>
+            <input type="password" id="txtPassword" placeholder="Nhập mật khẩu của bạn..." style="line-height:20px; padding:5px 15px;  width:500px" /> <br />
+            <input type="checkbox" id="cbMiss" />Nhớ Mật Khẩu
+            <br />
+            <input type="submit" name="txtLognIn" value="Logn In" />
+        </div>
+
+        <div class="sign-up">
+            <label>Full Name</label><br />
+            <input type="text" id="txtName" placeholder="Nhập họ tên của bạn..." style="line-height:20px; padding:5px 15px;  width:500px" /><br />
+            <label>Gender</label><br />
+            <input type="radio" id="rdGender" />Male
+            <input type="radio" id="rdGender" />FeMale
+            <input type="radio" id="rdGender" />Other
+            <label>Ngày Sinh</label><br />
+            <input type="date" id="dt" style="line-height:20px; padding:5px 15px;  width:200px" /><br />
+            <label>Email</label><br />
+            <input type="email" id="txtEmail" placeholder="Nhập địa chỉ email của bạn..." style="line-height:20px; padding:5px 15px;  width:500px" /><br />
+            <label>PhoneNumber</label><br />
+            <input type="number" id="txtNumber" placeholder="Nhập số điện thoại của bạn..." style="line-height:20px; padding:5px 15px;  width:500px" /><br />
+            <label>Username</label><br />
+            <input type="text" id="txtName" style="line-height:20px; padding:5px 15px;  width:500px" /><br />
+            <label>Password</label><br />
+            <input type="password" id="txtpass1" name="password" style="line-height:20px; padding:5px 15px;  width:500px" /> <br />
+            <label>
+                Lưu ý: Mật khẩu cói tối thiểu 8 ký tự bao gồm chữ, số và các ký tự đặc biệt
+            </label><br />
+            <label> Confirm Password</label><br />
+            <input type="password" id="txtpass2" name="confirm-password" style="line-height:20px; padding:5px 15px;  width:500px" /><br />
+            <br />
+            <input type="submit" name="txtSignIn" value="Sign In" />
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
